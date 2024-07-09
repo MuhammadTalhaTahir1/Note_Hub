@@ -79,6 +79,10 @@ const Notes = ({ route, navigation }) => {
         maxLength={60}
         value={note.note}
         placeholder={'Description'}
+        multiline={true}
+        numberOfLines={10}
+        scrollEnabled={true}
+        showsVerticalScrollIndicator={true}
         onChangeText={(text) => setNote({ ...note, note: text })}
       />
       <ModalNotification
